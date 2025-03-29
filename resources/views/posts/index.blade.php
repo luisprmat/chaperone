@@ -43,7 +43,7 @@
                             <td class="p-4 border-b border-slate-200">
                                 <ul class="block text-sm text-slate-800 list-disc list-inside">
                                     @foreach ($post->comments as $comment)
-                                        <li class="truncate">{{ $comment->body }}</li>
+                                        <li class="truncate"><b>{{ $comment->post->title }}: </b>{{ $comment->body }}</li>
                                     @endforeach
                                 </ul>
                             </td>
